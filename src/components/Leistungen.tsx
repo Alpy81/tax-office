@@ -122,7 +122,7 @@ export default function Leistungen() {
               fontSize: "clamp(.85rem,1.1vw,.95rem)",
             }}>
             Maßgeschneiderte Steuerberatung – keine Pauschalangebote, sondern
-            individuelle Lösungen für jede Lebenssituation.
+            individuelle Lösungen <br></br>für jede Lebenssituation.
           </p>
         </div>
 
