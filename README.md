@@ -313,9 +313,6 @@ Or connect your GitHub repository directly in the [Vercel Dashboard](https://ver
 
 _Frankfurt am Main, Germany_
 
-[![Website](https://img.shields.io/badge/Website-websylon.de-146574?style=for-the-badge)](https://websylon.de)
-[![GitHub](https://img.shields.io/badge/GitHub-WEBSYLON-black?style=for-the-badge&logo=github)](https://github.com/your-username)
-
 </div>
 
 ---
