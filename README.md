@@ -307,8 +307,6 @@ Or connect your GitHub repository directly in the [Vercel Dashboard](https://ver
 
 <div align="center">
 
-**Crafted with ❤️ by**
-
 <img src="/public/images/websylon.png" alt="WEBSYLON" width="200" />
 
 **WEBSYLON** — Professional Web Development & Digital Solutions
@@ -323,5 +321,5 @@ _Frankfurt am Main, Germany_
 ---
 
 <div align="center">
-  <sub>© 2025 WEBSYLON. All rights reserved.</sub>
+  <sub>© 2026 WEBSYLON. All rights reserved.</sub>
 </div>
