@@ -213,6 +213,7 @@ export default function Navbar() {
           padding: "6rem 2rem 3rem",
           transform: menuOpen ? "translateX(0)" : "translateX(100%)",
           transition: "transform .4s cubic-bezier(.4,0,.2,1)",
+          pointerEvents: menuOpen ? "all" : "none", // ← FIX: blockiert keine Klicks wenn geschlossen
         }}>
         <nav style={{ display: "flex", flexDirection: "column", gap: "0" }}>
           {NAV_LINKS.map((link, i) => (

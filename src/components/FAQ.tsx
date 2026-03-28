@@ -91,7 +91,7 @@ export default function FAQ() {
             }}>
             Haben Sie eine Frage, die hier nicht beantwortet wird?{" "}
             <a
-              href="/termin"
+              href="#kontakt"
               style={{
                 color: "#5ce1e6",
                 textDecoration: "none",

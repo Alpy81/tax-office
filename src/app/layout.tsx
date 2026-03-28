@@ -1,16 +1,30 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'Steuer & Partner | Steuerberatung Frankfurt',
-  description: 'Moderne Steuerberatung für Privatpersonen, Selbstständige und Unternehmen in Frankfurt am Main. Persönlich, kompetent, digital.',
-  keywords: 'Steuerberater Frankfurt, Steuererklärung, Buchhaltung, Jahresabschluss, Lohnbuchhaltung',
-}
+  title: "Weber & Partner | Steuerberatung Frankfurt",
+  description:
+    "Moderne Steuerberatung für Privatpersonen, Selbstständige und Unternehmen in Frankfurt am Main. Persönlich, kompetent, digital.",
+  keywords:
+    "Steuerberater Frankfurt, Steuererklärung, Buchhaltung, Jahresabschluss, Lohnbuchhaltung",
+};
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="de" suppressHydrationWarning>
+      <head>
+        <meta
+          httpEquiv="Cache-Control"
+          content="no-cache, no-store, must-revalidate"
+        />
+        <meta httpEquiv="Pragma" content="no-cache" />
+        <meta httpEquiv="Expires" content="0" />
+      </head>
       <body>{children}</body>
     </html>
-  )
+  );
 }
