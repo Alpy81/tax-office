@@ -272,7 +272,10 @@ export default function Team() {
                         <span
                           style={{
                             fontSize: ".7rem",
-                            color: "rgba(143,163,168,.45)",
+                            color: isHovered
+                              ? "#5ce1e6"
+                              : "rgba(143,163,168,.45)",
+                            transition: "color .2s",
                           }}>
                           Umdrehen →
                         </span>
