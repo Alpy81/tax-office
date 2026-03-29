@@ -80,7 +80,6 @@ export default function Branchen() {
       className="mesh-bg"
       style={{ paddingBlock: "var(--section-py)" }}>
       <div className="container">
-        {/* ── Header ── */}
         <div style={{ marginBottom: "clamp(3rem,6vw,5rem)" }}>
           <p
             className="font-mono"
@@ -108,7 +107,6 @@ export default function Branchen() {
           </h2>
         </div>
 
-        {/* ── Two-column layout ── */}
         <div
           style={{
             display: "grid",
@@ -117,7 +115,7 @@ export default function Branchen() {
             gap: "clamp(2rem,5vw,5rem)",
             alignItems: "start",
           }}>
-          {/* Left – list */}
+          {/* Left */}
           <div style={{ display: "flex", flexDirection: "column" }}>
             {BRANCHEN.map((b, i) => (
               <button
@@ -138,11 +136,6 @@ export default function Branchen() {
                     active === i ? "rgba(20,101,116,.1)" : "transparent",
                   transition: "background .25s, border-color .25s",
                 }}>
-                <span
-                  style={{
-                    fontSize: "clamp(1.1rem,1.8vw,1.3rem)",
-                    flexShrink: 0,
-                  }}></span>
                 <div>
                   <div
                     style={{
@@ -165,7 +158,6 @@ export default function Branchen() {
                     {b.short}
                   </div>
                 </div>
-                {/* arrow */}
                 <svg
                   style={{
                     marginLeft: "auto",
@@ -191,22 +183,14 @@ export default function Branchen() {
             ))}
           </div>
 
-          {/* Right – detail panel */}
+          {/* Right – kein sticky mehr */}
           <div
             style={{
-              position: "sticky",
-              top: "clamp(5rem,8vw,7rem)",
               padding: "clamp(2rem,3.5vw,3.5rem)",
               border: "1px solid rgba(92,225,230,.15)",
               background: "rgba(20,101,116,.06)",
               borderRadius: "2px",
             }}>
-            <div
-              style={{
-                fontSize: "clamp(2rem,4vw,3rem)",
-                marginBottom: "1.25rem",
-              }}></div>
-
             <h3
               className="font-display"
               style={{
@@ -219,7 +203,6 @@ export default function Branchen() {
               }}>
               {current.name}
             </h3>
-
             <p
               style={{
                 color: "#8fa3a8",
@@ -229,8 +212,6 @@ export default function Branchen() {
               }}>
               {current.desc}
             </p>
-
-            {/* Bullet points */}
             <ul
               style={{
                 listStyle: "none",
@@ -263,7 +244,6 @@ export default function Branchen() {
                 </li>
               ))}
             </ul>
-
             <a
               href="#kontakt"
               style={{

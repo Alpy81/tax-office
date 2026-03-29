@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import PageRestoreHandler from "@/components/PageRestoreHandler";
 
 const BASE_URL = "https://steuerpartner-ffm.de";
 
@@ -22,10 +23,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Weber & Partner GmbH" }],
   creator: "WEBSYLON",
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     locale: "de_DE",
@@ -62,19 +60,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="de" suppressHydrationWarning>
+    <html lang="de" suppressHydrationWarning data-scroll-behavior="smooth">
       <head>
-        <meta
-          httpEquiv="Cache-Control"
-          content="no-cache, no-store, must-revalidate"
-        />
-        <meta httpEquiv="Pragma" content="no-cache" />
-        <meta httpEquiv="Expires" content="0" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/png" href="/icon5.png" />
         <link rel="apple-touch-icon" href="/apple-icon5.png" />
       </head>
-      <body>{children}</body>
+      <body>
+        <PageRestoreHandler />
+        {children}
+      </body>
     </html>
   );
 }

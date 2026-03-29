@@ -199,77 +199,76 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* ── Mobile Drawer ── */}
-      <div
-        style={{
-          position: "fixed",
-          inset: 0,
-          zIndex: 190,
-          background: "rgba(8,12,14,.97)",
-          backdropFilter: "blur(16px)",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          padding: "6rem 2rem 3rem",
-          transform: menuOpen ? "translateX(0)" : "translateX(100%)",
-          transition: "transform .4s cubic-bezier(.4,0,.2,1)",
-          pointerEvents: menuOpen ? "all" : "none", // ← FIX: blockiert keine Klicks wenn geschlossen
-        }}>
-        <nav style={{ display: "flex", flexDirection: "column", gap: "0" }}>
-          {NAV_LINKS.map((link, i) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setMenuOpen(false)}
-              style={{
-                textDecoration: "none",
-                color: "#eef1f6",
-                fontSize: "clamp(1.6rem,6vw,2.2rem)",
-                fontFamily: "Playfair Display, serif",
-                fontWeight: 700,
-                letterSpacing: "-0.02em",
-                padding: ".75rem 0",
-                borderBottom: "1px solid rgba(255,255,255,.06)",
-                transition: "color .2s",
-                animationDelay: `${i * 0.06}s`,
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#5ce1e6")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#eef1f6")}>
-              {link.label}
-            </a>
-          ))}
-        </nav>
-
-        <a
-          href="/termin"
-          onClick={() => setMenuOpen(false)}
+      {/* ── Mobile Drawer – nur im DOM wenn geöffnet ── */}
+      {menuOpen && (
+        <div
           style={{
-            marginTop: "2.5rem",
-            display: "block",
-            textAlign: "center",
-            background: "linear-gradient(135deg,#146574,#1a7d90)",
-            color: "#eef1f6",
-            textDecoration: "none",
-            padding: "1rem",
-            borderRadius: "3px",
-            fontSize: "1rem",
-            fontWeight: 600,
-            border: "1px solid rgba(92,225,230,.2)",
+            position: "fixed",
+            inset: 0,
+            zIndex: 190,
+            background: "rgba(8,12,14,.97)",
+            backdropFilter: "blur(16px)",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            padding: "6rem 2rem 3rem",
           }}>
-          Termin buchen →
-        </a>
+          <nav style={{ display: "flex", flexDirection: "column", gap: "0" }}>
+            {NAV_LINKS.map((link, i) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                style={{
+                  textDecoration: "none",
+                  color: "#eef1f6",
+                  fontSize: "clamp(1.6rem,6vw,2.2rem)",
+                  fontFamily: "Playfair Display, serif",
+                  fontWeight: 700,
+                  letterSpacing: "-0.02em",
+                  padding: ".75rem 0",
+                  borderBottom: "1px solid rgba(255,255,255,.06)",
+                  transition: "color .2s",
+                  animationDelay: `${i * 0.06}s`,
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#5ce1e6")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#eef1f6")}>
+                {link.label}
+              </a>
+            ))}
+          </nav>
 
-        <p
-          className="font-mono"
-          style={{
-            marginTop: "3rem",
-            fontSize: ".65rem",
-            color: "#8fa3a8",
-            letterSpacing: ".12em",
-          }}>
-          Weber & Partner · Frankfurt am Main
-        </p>
-      </div>
+          <a
+            href="/termin"
+            onClick={() => setMenuOpen(false)}
+            style={{
+              marginTop: "2.5rem",
+              display: "block",
+              textAlign: "center",
+              background: "linear-gradient(135deg,#146574,#1a7d90)",
+              color: "#eef1f6",
+              textDecoration: "none",
+              padding: "1rem",
+              borderRadius: "3px",
+              fontSize: "1rem",
+              fontWeight: 600,
+              border: "1px solid rgba(92,225,230,.2)",
+            }}>
+            Termin buchen →
+          </a>
+
+          <p
+            className="font-mono"
+            style={{
+              marginTop: "3rem",
+              fontSize: ".65rem",
+              color: "#8fa3a8",
+              letterSpacing: ".12em",
+            }}>
+            Weber & Partner · Frankfurt am Main
+          </p>
+        </div>
+      )}
 
       <style>{`
         @media (max-width: 900px) {

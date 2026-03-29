@@ -9,10 +9,12 @@ import Blog from "@/components/Blog";
 import Kontakt from "@/components/Kontakt";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
+import PageRestoreHandler from "@/components/PageRestoreHandler";
 
 export default function Home() {
   return (
     <main>
+      <PageRestoreHandler />
       <Navbar />
       <Hero />
       <Leistungen />
