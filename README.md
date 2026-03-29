@@ -282,22 +282,48 @@ All font sizes and spacing use `clamp()` for fluid scaling across all screen siz
 
 ## 🚢 Deployment
 
-This project is deployed on **Vercel** with automatic deployments on every push to `main`.
+This project is deployed on **Netlify** with automatic deployments on every push to `main`.
 
-### Deploy your own
+## 🚀 Deployment on Netlify
+
+### Prerequisites
+
+- [Netlify Account](https://netlify.com) (free)
+- [Netlify CLI](https://docs.netlify.com/cli/get-started/) installed
+
+### Install Netlify CLI
 
 ```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-
-# Set environment variables in Vercel Dashboard:
-# RESEND_API_KEY
-# CONTACT_EMAIL
-# BREVO_API_KEY
+npm install -g netlify-cli
 ```
+
+### Login to Netlify
+
+```bash
+netlify login
+```
+
+### Build the project
+
+```bash
+npm run build
+```
+
+### Deploy to Netlify (Preview)
+
+```bash
+netlify deploy --dir=.next
+```
+
+### Deploy to Production
+
+```bash
+netlify deploy --dir=.next --prod
+```
+
+### Environment Variables
+
+Set these in Netlify Dashboard → Site settings → Environment variables:
 
 Or connect your GitHub repository directly in the app.netlify.com for automatic CI/CD.
 
@@ -320,3 +346,4 @@ _Frankfurt am Main, Germany_
 <div align="center">
   <sub>© 2026 WEBSYLON. All rights reserved.</sub>
 </div>
+```
