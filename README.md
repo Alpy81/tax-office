@@ -41,7 +41,7 @@ This project demonstrates a complete full-stack Next.js delivery: from UI design
 
 ## 🚀 Live Demo
 
-> 🔗 **[weber-partner-steuerberatung.vercel.app](https://vercel.com)** _(link will be updated after deployment)_
+> 🔗 **[https://webysylon-tax-office-demo.netlify.app](https://netlify.com)**
 
 ---
 
@@ -299,7 +299,7 @@ vercel
 # BREVO_API_KEY
 ```
 
-Or connect your GitHub repository directly in the [Vercel Dashboard](https://vercel.com/new) for automatic CI/CD.
+Or connect your GitHub repository directly in the app.netlify.com for automatic CI/CD.
 
 ---
 
