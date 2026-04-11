@@ -120,6 +120,7 @@ export default function LeistungPage({ data }: { data: Leistung }) {
             </p>
             <h1
               className="font-display"
+              lang="de"
               style={{
                 fontSize: "clamp(2.2rem,5.5vw,4.8rem)",
                 fontWeight: 900,
