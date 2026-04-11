@@ -301,7 +301,7 @@ Gesetzliche Änderungen bei Lohnsteuer, Sozialversicherung oder Mindestlohn werd
 
   gestaltung: {
     slug: "gestaltung",
-    titel: "Steuergestaltung & Beratung",
+    titel: "Steuergestaltung &\u00AD Beratung",
     untertitel: "Proaktiv. Strategisch. Langfristig wirksam.",
     intro:
       "Die beste Steuergestaltung beginnt nicht am 31. Dezember – sie beginnt heute. Wir denken Ihre Steuersituation langfristig und vorausschauend.",
@@ -517,7 +517,7 @@ Wir analysieren Ihre Vermögenssituation, identifizieren alle nutzbaren Freibetr
 
   international: {
     slug: "international",
-    titel: "Internationales Steuerrecht",
+    titel: "Internationales\u00AD Steuerrecht",
     untertitel: "Grenzenlos tätig. Steuerlich sicher aufgestellt.",
     intro:
       "Grenzüberschreitende Tätigkeiten bringen komplexe steuerliche Fragen mit sich. Wir navigieren Sie sicher durch Doppelbesteuerungsabkommen, Expatriate-Regelungen und internationale Steuerstrukturen.",
