@@ -9,7 +9,7 @@ export default function Impressum() {
       sections={[
         {
           titel: "Angaben zum Unternehmen",
-          inhalt: `Steuer & Partner GmbH\nSteuerberatungsgesellschaft\n\nMusterstraße 12\n60311 Frankfurt am Main\n\nTelefon: +49 69 123 456 789\nTelefax: +49 69 123 456 790\nE-Mail: info@steuerpartner-ffm.de`,
+          inhalt: `Weber & Partner GmbH\nSteuerberatungsgesellschaft\n\nMusterstraße 12\n60311 Frankfurt am Main\n\nTelefon: +49 69 123 456 789\nTelefax: +49 69 123 456 790\nE-Mail: info@steuerpartner-ffm.de`,
         },
         {
           titel: "Vertreten durch",

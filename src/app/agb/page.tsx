@@ -4,7 +4,7 @@ export default function AGB() {
   return (
     <LegalPage
       titel="Allgemeine Geschäftsbedingungen"
-      untertitel="AGB der Steuer & Partner GmbH – Steuerberatungsgesellschaft"
+      untertitel="AGB der Weber & Partner GmbH – Steuerberatungsgesellschaft"
       stand="März 2025"
       sections={[
         {

@@ -9,7 +9,7 @@ export default function Datenschutz() {
       sections={[
         {
           titel: "Verantwortlicher",
-          inhalt: `Steuer & Partner GmbH\nMusterstraße 12\n60311 Frankfurt am Main\n\nTelefon: +49 69 123 456 789\nE-Mail: datenschutz@steuerpartner-ffm.de`,
+          inhalt: `Weber & Partner GmbH\nMusterstraße 12\n60311 Frankfurt am Main\n\nTelefon: +49 69 123 456 789\nE-Mail: datenschutz@steuerpartner-ffm.de`,
         },
         {
           titel: "Grundsätze der Datenverarbeitung",

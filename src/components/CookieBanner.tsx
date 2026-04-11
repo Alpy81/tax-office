@@ -87,7 +87,7 @@ export default function CookieBanner() {
             marginBottom: "1rem",
           }}>
           <div style={{ display: "flex", alignItems: "center", gap: ".6rem" }}>
-            <span style={{ fontSize: "1.1rem" }}>🍪</span>
+            <span style={{ fontSize: "1.1rem" }}></span>
             <h3
               className="font-display"
               style={{

@@ -436,7 +436,7 @@ export default function Team() {
                 color: "#eef1f6",
                 letterSpacing: "-0.02em",
               }}>
-              Steuer <span style={{ color: "#5ce1e6" }}>&</span> Partner ·
+              Weber <span style={{ color: "#5ce1e6" }}>&</span> Partner ·
               Frankfurt am Main
             </p>
           </div>

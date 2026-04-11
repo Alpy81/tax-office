@@ -22,7 +22,6 @@ const RECHTLICHES = [
   { label: "Impressum", href: "/impressum" },
   { label: "Datenschutz", href: "/datenschutz" },
   { label: "AGB", href: "/agb" },
-  { label: "Cookie-Einstellungen", href: "#" },
 ];
 
 function FooterLink({ label, href }: { label: string; href: string }) {
@@ -276,7 +275,7 @@ export default function Footer() {
               color: "rgba(143,163,168,.38)",
               letterSpacing: ".08em",
             }}>
-            © {year} Steuer &amp; Partner GmbH · Alle Rechte vorbehalten
+            © {year} Weber &amp; Partner GmbH · Alle Rechte vorbehalten
           </span>
 
           <div
