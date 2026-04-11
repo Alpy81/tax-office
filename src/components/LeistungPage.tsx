@@ -127,6 +127,9 @@ export default function LeistungPage({ data }: { data: Leistung }) {
                 letterSpacing: "-0.03em",
                 lineHeight: 1.06,
                 marginBottom: ".875rem",
+                wordBreak: "break-word",
+                hyphens: "auto",
+                overflowWrap: "break-word",
               }}>
               {data.titel}
             </h1>
