@@ -17,7 +17,7 @@ export type Leistung = {
 export const LEISTUNGEN: Record<string, Leistung> = {
   einkommensteuer: {
     slug: "einkommensteuer",
-    titel: "Einkommensteuererklärung",
+    titel: "Einkommens\u00ADsteuer\u00ADerklärung",
     untertitel: "Maximal optimiert. Fristgerecht. Digital.",
     intro:
       "Ihre Einkommensteuererklärung ist mehr als ein Pflichtformular – sie ist eine jährliche Chance, Geld zurückzuholen, das Ihnen zusteht. Wir sorgen dafür, dass Sie diese Chance nutzen.",
@@ -88,7 +88,7 @@ Unsere vollständig digitale Arbeitsweise bedeutet für Sie: keine langen Wartez
 
   unternehmen: {
     slug: "unternehmen",
-    titel: "Unternehmensbesteuerung",
+    titel: "Unternehmens\u00ADbesteuerung",
     untertitel: "Strategisch. Vorausschauend. Wachstumsorientiert.",
     intro:
       "Unternehmensbesteuerung ist keine lästige Pflicht – sie ist ein strategisches Instrument. Wir nutzen es konsequent für Sie.",
